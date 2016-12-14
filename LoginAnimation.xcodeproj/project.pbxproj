@@ -11,8 +11,10 @@
 		C270F6F91DFFFAFC004C694B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C270F6F81DFFFAFC004C694B /* AppDelegate.m */; };
 		C270F6FC1DFFFAFC004C694B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C270F6FB1DFFFAFC004C694B /* ViewController.m */; };
 		C270F6FF1DFFFAFC004C694B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C270F6FD1DFFFAFC004C694B /* Main.storyboard */; };
-		C270F7011DFFFAFC004C694B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C270F7001DFFFAFC004C694B /* Assets.xcassets */; };
 		C270F7041DFFFAFC004C694B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C270F7021DFFFAFC004C694B /* LaunchScreen.storyboard */; };
+		C280B90D1E00DB9200A37D84 /* KKView.m in Sources */ = {isa = PBXBuildFile; fileRef = C280B90C1E00DB9200A37D84 /* KKView.m */; };
+		C280B9101E00DBD700A37D84 /* KKAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = C280B90F1E00DBD700A37D84 /* KKAnimationView.m */; };
+		C280B9121E00EC5100A37D84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C280B9111E00EC5100A37D84 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,9 +25,13 @@
 		C270F6FA1DFFFAFC004C694B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		C270F6FB1DFFFAFC004C694B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		C270F6FE1DFFFAFC004C694B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		C270F7001DFFFAFC004C694B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C270F7031DFFFAFC004C694B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C270F7051DFFFAFC004C694B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C280B90B1E00DB9200A37D84 /* KKView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKView.h; sourceTree = "<group>"; };
+		C280B90C1E00DB9200A37D84 /* KKView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKView.m; sourceTree = "<group>"; };
+		C280B90E1E00DBD700A37D84 /* KKAnimationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKAnimationView.h; sourceTree = "<group>"; };
+		C280B90F1E00DBD700A37D84 /* KKAnimationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKAnimationView.m; sourceTree = "<group>"; };
+		C280B9111E00EC5100A37D84 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,12 +64,13 @@
 		C270F6F31DFFFAFC004C694B /* LoginAnimation */ = {
 			isa = PBXGroup;
 			children = (
-				C270F6F71DFFFAFC004C694B /* AppDelegate.h */,
+				C280B90A1E00DB5800A37D84 /* KKAnimation */,
 				C270F6F81DFFFAFC004C694B /* AppDelegate.m */,
+				C270F6F71DFFFAFC004C694B /* AppDelegate.h */,
 				C270F6FA1DFFFAFC004C694B /* ViewController.h */,
 				C270F6FB1DFFFAFC004C694B /* ViewController.m */,
+				C280B9111E00EC5100A37D84 /* Assets.xcassets */,
 				C270F6FD1DFFFAFC004C694B /* Main.storyboard */,
-				C270F7001DFFFAFC004C694B /* Assets.xcassets */,
 				C270F7021DFFFAFC004C694B /* LaunchScreen.storyboard */,
 				C270F7051DFFFAFC004C694B /* Info.plist */,
 				C270F6F41DFFFAFC004C694B /* Supporting Files */,
@@ -77,6 +84,17 @@
 				C270F6F51DFFFAFC004C694B /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C280B90A1E00DB5800A37D84 /* KKAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				C280B90B1E00DB9200A37D84 /* KKView.h */,
+				C280B90C1E00DB9200A37D84 /* KKView.m */,
+				C280B90E1E00DBD700A37D84 /* KKAnimationView.h */,
+				C280B90F1E00DBD700A37D84 /* KKAnimationView.m */,
+			);
+			path = KKAnimation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,7 +157,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C270F7041DFFFAFC004C694B /* LaunchScreen.storyboard in Resources */,
-				C270F7011DFFFAFC004C694B /* Assets.xcassets in Resources */,
+				C280B9121E00EC5100A37D84 /* Assets.xcassets in Resources */,
 				C270F6FF1DFFFAFC004C694B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -151,6 +169,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C280B9101E00DBD700A37D84 /* KKAnimationView.m in Sources */,
+				C280B90D1E00DB9200A37D84 /* KKView.m in Sources */,
 				C270F6FC1DFFFAFC004C694B /* ViewController.m in Sources */,
 				C270F6F91DFFFAFC004C694B /* AppDelegate.m in Sources */,
 				C270F6F61DFFFAFC004C694B /* main.m in Sources */,
@@ -312,6 +332,7 @@
 				C270F70A1DFFFAFC004C694B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
